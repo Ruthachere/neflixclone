@@ -1,0 +1,246 @@
+body{
+    background-color: black;
+    margin: auto;
+    box-sizing: border-box;
+}
+.bg{
+        background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/21a8ba09-4a61-44f8-8e2e-70e949c00c6f/75a0612d-42e1-4833-8e23-ca3146fb94a1/CM-en-20240722-POP_SIGNUP_TWO_WEEKS-perspective_WEB_f7736b7a-61c2-441b-9f40-1364978458ea_medium.jpg');
+        height:750px;
+        display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: brightness(50%);
+        position: relative;
+}
+nav h1{
+        color: red;
+        font-weight: 900;
+        font-size: 35px;
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        padding: 20px 0px 20px 30px;
+
+}
+.form-container{
+    width: 35%;
+    margin: auto;
+    border-radius: 5px;
+    position: absolute;
+    top: 17%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+}
+h2{
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+form{
+    position: relative;
+    background-color: rgba(10, 9, 9, 0.68);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 50px;
+    color: #fff;
+    border-radius: none;
+}
+.email, .Password,.signin-btn{
+    width: 90%;
+    margin: 8px 0px;
+    align-items: center; 
+    border-radius: 5px;  
+}
+.email, .Password{
+    color: white;
+    height: 22px;
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid rgb(162, 161, 161); 
+}
+ .email:focus, .Password:focus{
+    outline: 2px solid white;
+ }
+.signin-btn{
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: red;
+}
+.signin-code{
+    background-color: #2d2b2bd1;
+    border: none;
+}
+
+h5{
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 0;
+}
+.password-para{
+    text-align: center;
+    font-size: 18px;
+}
+.password-para a{
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+.password-para a:hover,
+.para-two a:hover,
+.para-three a:hover{
+    text-decoration-line: underline;
+}
+.checkbox{
+    font-family: sans-serif;
+    display: flex;
+    font-size: 18px;  
+    align-items: center;
+}
+.check{
+    width: 20px;
+    height: 20px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.para-two{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.para-two a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+.para-three{
+    font-size: 14px;
+    margin-top: 10px;
+    color: #888787;
+    font-family: sans-serif;
+}
+.para-three a{
+   color: rgb(41, 78, 247);
+   text-decoration: none;
+    font-family: sans-serif;
+}
+footer{
+    font-family: "Inter", sans-serif;
+    padding: 30px 0px 30px 50px;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.group-one-links, .group-two-links{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+.footer-links li, h6 a{
+    font-size: 15px;
+    font-weight: 500;
+    list-style: none;
+    padding: 5px 0px;
+}
+h6 a{
+    text-decoration: none;
+}
+.footer-links li a, h6 a{
+    color: #bcb9b9;
+}
+.lang{
+    background-color: transparent;
+    border-radius: 5px;
+    margin: 20px 0px;
+    padding: 7px;
+    width: 10%;
+    color: #fff;
+}
+.lang option{
+    background-color: #bcb9b9;
+    color: #fff;
+}
+.error{
+    color: red;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin: 0;
+    padding-top: 10px;
+}
+
+@media screen and (max-width:900px){
+   .bg{
+    height: 600px;
+    background-size: cover;
+   } 
+   .form-container{
+    width: 60%;
+    top: 9%;
+   }
+   footer{
+    padding-top: 150px;
+   }
+   .group-one-links, .group-two-links{
+    display: block;
+}
+}
+@media screen and (max-width:768px) {
+    .bg{
+        display: none;
+    }
+    nav h1{
+        position: relative;
+        padding-bottom: 0;
+        padding-left: 20px;
+        font-size: 35px;
+    }
+    h2{
+        margin: 0;
+    }
+    .form-container{
+        width: 100%;
+        padding-bottom: 50px;
+        border-radius:0px ;
+        border-bottom: 1px solid gray;
+        position: relative;
+    }
+    form{
+        padding: 20px;
+    }
+    .email, .Password{
+        padding: 17px;
+    }
+    footer{
+        padding:20px 20px 0px 20px;
+       }
+       .footer-links li{
+        padding: 7px 0px;
+    }
+    .lang{
+        width: 30%;
+    }
+    .footer-nav{
+        width: 100%;
+    }
+
+}

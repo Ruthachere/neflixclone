@@ -4,3 +4,15 @@ toggleEl.forEach(toggle => {
        toggle.parentNode.classList.toggle('active');
    }) 
 });
+
+const btn = document.querySelector('.get-started-btn');
+const input = document.querySelector('.input');
+
+btn.addEventListener('click', () => {
+    if (input.value == '') {
+        input.focus();
+    } else {
+         window.location.href = 'signup.html'; 
+    }
+    
+})
