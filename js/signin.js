@@ -27,20 +27,14 @@ form.addEventListener('submit', function (e) {
 
      //validation of form
     let hasError = false;
-
-       if (email.value.trim() == "") {
+    
+       if (email.value.trim() == ""|| password.value.trim() == "") {
            addErrorElement(email, "Please enter a valid email");
+           addErrorElement(password, "Your password must contain between 4 to 60 characters");
            hasError = true;
-       }else{
-
-          removeErrorElement(email);
-       }
-       if (password.value.trim() == "") {
-        addErrorElement(password, "Your password must contain between 4 to 60 characters");
-        hasError = true;
        } else{
-
+         removeErrorElement(email);
           removeErrorElement(password);
+          window.location.href = '../Netflix/html/welcomepage.html'; 
        }
-       //window.location.href = 'index.html'; 
 })
