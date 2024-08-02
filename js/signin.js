@@ -35,6 +35,6 @@ form.addEventListener('submit', function (e) {
        } else{
          removeErrorElement(email);
           removeErrorElement(password);
-          window.location.href = '../Netflix/html/welcomepage.html'; 
+          window.location.href = '../html/welcomepage.html'; 
        }
 })
