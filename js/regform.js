@@ -89,7 +89,7 @@ form.addEventListener('submit', function (e) {
     } else {
         removeErrorElement(email);
         removeErrorElement(password);
-        window.location.href = 'index.html'; 
+        window.location.href = 'signup.html'; 
     }
 });
 
