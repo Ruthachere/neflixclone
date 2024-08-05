@@ -225,5 +225,10 @@ footer{
     .footer-nav{
         width: 85%;
     }
+    .content-one{
+    flex-direction: row;
+    justify-content: space-between;
+}
+ 
 
  }
