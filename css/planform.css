@@ -35,66 +35,88 @@ h1{
     border: none;
     background-color: transparent;
 }
-.container{
+.title {
+    padding: 17px 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 3px 0px;
-    width: 35%;
-    margin: 60px auto;
-    padding: 30px 20px;
+    font-family: sans-serif;
 }
-
-.image-one{
-    width: 15%;
-    height: 15%;
-    align-items: center;
+.title h2{
+    margin: 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    gap: 20px 15px;
+    padding: 20px 40px;
     justify-content: center;
-    display: flex;
-    flex-direction: column-reverse;
 }
-.content{
+.grid-item{
+    height: 100%;
+    border: 1px solid rgb(140, 136, 136);
+    border-radius: 10px;
+    padding: 7px;
+}
+.title-body{
+    color: #fff;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding: 20px 0px;
-}
-.content h2{
+    padding: 15px;
+    gap: 5px 0px;
     font-family: sans-serif;
-    font-weight: 600;
-    margin: 0;
-    font-size: 30px;
-}
-.content p{
-    width: 80%;
-    text-align: left;
-    font-size: 18px;
-    padding-left: 12px;
-}
-i{
-    font-size: 25px;
-}
-.content-body{
-    width: 95%;
-}
-.content span{
-    color: rgb(14, 13, 13);
-    text-transform: capitalize;
-    padding: 5px 0px;
-    font-family: sans-serif;
-    font-size: 14px;
+    border-radius: 10px;
+    margin-bottom: 17px;
+    background: linear-gradient(160deg, rgb(31, 49, 184), rgb(20, 52, 194),rgb(43, 93, 231));
 }
 
-.content h5{
-    text-align: center;
-     align-items: center;
-     margin: 0;
-     padding-left: 25px;
+.title-body-two{
+    background: linear-gradient(150deg, rgb(31, 49, 184), rgb(20, 52, 194),rgb(144, 89, 226));
+}
+.title-body-three{
+    background: linear-gradient(135deg, rgb(31, 49, 184), rgb(20, 52, 194),rgb(100, 14, 228));
+}
+.title-body-four{
+    background: linear-gradient(140deg, rgb(31, 49, 184), rgb(20, 52, 194),rgb(252, 9, 21));
+}
+.title-body h4{
+    font-size: 16px;
+    margin: 0;
+    font-weight: 600;
+}
+.title-body p{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+.content-one{
     display: flex;
-    flex-direction: row;
-    font-weight: 400;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 0px;
+    border-bottom: 1px solid gray;
     font-family: sans-serif;
+    gap: 5px 0px;
+    width: 90%;
+    margin: auto;
+}
+.content-one p{
+    font-size: 13px;
+    color: gray;
+    margin: 0;
+    font-weight: 600;
+}
+.content-one h4{
+    font-size: 14px;
+    margin: 0;
+    color: rgb(99, 97, 97);
+}
+.foot{
+    border: none;
+}
+.grid-item h5{
+    background-color: red;
+    color: #fff;
 }
 .next-btn{
     font-family: sans-serif;
@@ -105,7 +127,8 @@ i{
     padding: 8px;
     border: none;
     background-color: red;
-    width: 60%;
+    width: 40%;
+    margin:10px auto;
     border-radius: 5px;  
     align-items: center;
     display: flex;
@@ -117,7 +140,16 @@ i{
     font-size: 25px;
     text-decoration: none;
 }
-
+.conclusion-statement{
+    padding: 13px 40px;
+}
+.conclusion-statement p{
+    color: #727272;
+    font-size: 13px;
+    line-height: 1.7;
+    font-weight: 500;
+    font-family: sans-serif;
+}
 footer{
     font-family: "Inter", sans-serif;
     padding: 16px 0px 16px 50px;
@@ -147,33 +179,30 @@ footer{
     text-decoration: none;
 }
 @media screen and (max-width:1024px) {
-    .container{
-     width: 60%;
-     padding: 40px;
-    }
-    .content p{
-        width: 78%;
-        font-size: 17px;
-    }
+.grid-container{
+    grid-template-columns: auto auto;
+    padding: 15px 30px;
+    justify-content: center;
+    gap: 30px 15px;
+}
+/* .content-one{
+    flex-direction: row;
+    justify-content: space-between;
+} */
  }
+
  @media screen and (max-width:758px) {
-    .container{
-        width: 85%;
-        padding: 40px 30px;
-        align-items: flex-start;
+    .grid-container{
+        grid-template-columns: 100%;
+        padding: 10px 20px;
     }
-    .content h2{
-        text-align: left;
-        width: 100%;
-        font-size: 30px;
+    .conclusion-statement{
+        padding: 10px 20px;
     }
-    .content p{
-        text-align: left;
-        font-size: 20px;
+    .title{
+        padding: 10px 20px;
     }
-    .content{
-        align-items: flex-start;
-    }
+
     .next-btn{
         width: 95%;
     }
@@ -195,9 +224,6 @@ footer{
     }
     .footer-nav{
         width: 85%;
-    }
-    .content h5{
-        padding-left: 0;
     }
 
  }
