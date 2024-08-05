@@ -12,7 +12,7 @@ btn.addEventListener('click', () => {
     if (input.value == '') {
         input.focus();
     } else {
-         window.location.href = 'signup.html'; 
+         window.location.href = 'reg1.html'; 
     }
     
 })

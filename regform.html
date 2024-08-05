@@ -3,44 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/welcomepage.css">
+    <link rel="stylesheet" href="css/regform.css">
     <title>Welcome page</title>
 </head>
 <body>
 
     <header>
         <nav>
-            <h1><a href="../index.html">Netflix</a></h1>
+            <h1><a href="index.html">Netflix</a></h1>
 
-            <button class="btn"><a href="../signup.html">Sign In</a></button>
+            <button class="btn"><a href="signin.html">Sign In</a></button>
         </nav>
     </header>
 
     <main>
         <div class="container">
             <div class="content">
-                <small>
+                <span>
                     STEP 1 OF 3
-                </small>
+                </span>
 
-                <h2>Welcome back! Joining Netflix is easy.</h2>
+                <h2>Create a password to start your membership.</h2>
 
-                <p>Enter your password and you will be watching in no time</p>
+                <p>Just a few more steps and you're done! <br> We hate paperwork, too.</p>
             </div>
 
-            <form action="#" class="form-elements">
-                <p>Email</p>
+            <form action="#" class="signin form-elements">
 
-                <input type="text" placeholder="Enter your password" class="password">
+               <label for="#">
+                <input type="email" placeholder="Enter an email" class="email" name="email">
+               </label> 
 
-                <a href="#">Forgot your password?</a>
+                <label for="#">
+                    <input type="text" placeholder="Add a password" class="password" name="password">
+                </label>
 
-                <button class="next-btn">Next</button>
+                <div class="checkbox">
+                    <input type="checkbox" class="check"><label for="checkbox">Please do not email me Netflix special offers</label>
+                </div>
+
+                <button class="next-btn submit">Next</button>
             </form>
         </div>
     </main>
@@ -71,9 +77,7 @@
         </div>
        </div>
     </footer>
- <script src="js/script.js"></script>   
-</body>
-</html>
-    
+
+    <script src="js/regform.js"></script>
 </body>
 </html>

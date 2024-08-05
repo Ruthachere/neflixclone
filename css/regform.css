@@ -48,15 +48,15 @@ h1{
 
 }
 .content h2{
-    width: 74%;
+    width: 80%;
     line-height: 1.3;
     font-family: sans-serif;
     font-weight: 600;
     margin: 0;
-    font-size: 35px;
+    font-size: 30px;
 }
-.content small{
-    color: gray;
+.content span{
+    color: rgb(35, 34, 34);
     text-transform: capitalize;
     padding: 5px 0px;
 }
@@ -70,43 +70,47 @@ h1{
  form{
     display: flex;
     flex-direction: column;
-    padding-top: 5px;
     gap: 3px 0;
     font-family: sans-serif;
  }
 
-  form p{
-    font-size: 17px;
-    margin: 0;
-    padding: 8px 0;
- }
-
- form a{
+ /* form a{
     font-size: 18px;
     padding: 10px 0;
     color: rgb(14, 113, 226);
     text-decoration: none;
- }
-.password,.next-btn{
+ } */
+.password,.email, .next-btn{
     width: 80%;
     margin: 8px 0px;
     align-items: center; 
     border-radius: 5px;  
 }
 
-.password{
+.password, .email{
     color: white;
     padding: 8px;
-    height: 48px;
+    height: 40px;
     background-color: transparent;
     border: 1px solid rgb(94, 92, 92); 
 }
- .password:focus{
-    outline: 1px solid rgb(14, 113, 226);
+ .password:focus, .email:focus{
+    outline: 1px solid rgb(15, 15, 15);
  }
- .password::placeholder{
+ .password::placeholder, .email::placeholder{
     font-size: 14px;
  }
+ .checkbox{
+    font-family: sans-serif;
+    display: flex;
+    font-size: 16px;  
+    font-weight: 500;
+    align-items: center;
+}
+.check{
+    width: 20px;
+    height: 20px;
+}
 .next-btn{
     font-family: sans-serif;
     font-size: 25px;
@@ -148,7 +152,19 @@ footer{
     color: #716e6e;
     text-decoration: none;
 }
- @media screen and (max-width:1000px) {
+.error{
+    color: red;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.input-error {
+    border: 2px solid red;
+}
+
+
+ @media screen and (max-width:1024px) {
     .container{
         width: 60%;
          padding: 40px;
@@ -160,26 +176,7 @@ footer{
         width: 85%;
         font-size: 17px;
     }
-    .password{
-        width: 90%;
-    }
-    .next-btn{
-        width: 95%;
-    }
- }
- @media screen and (max-width:1000px) {
-    .container{
-        width: 60%;
-         padding: 40px;
-    }
-    .content h2{
-        width: 83%;
-    }
-    .content p{
-        width: 85%;
-        font-size: 17px;
-    }
-    .password{
+    .password, .email{
         width: 90%;
     }
     .next-btn{
@@ -192,7 +189,7 @@ footer{
         padding: 40px 20px;
     }
     .content h2{
-        width: 85%;
+        width: 100%;
         font-size: 30px;
     }
     .content p{
@@ -204,6 +201,13 @@ footer{
     }
     h1 a{
         font-size: 30px;
+    }
+    .check{
+        height: 30px;
+        width: 30px;
+    }
+    .checkbox{
+        margin: 10px 0px;
     }
     .group-one-links, .group-two-links{
         display: block;
